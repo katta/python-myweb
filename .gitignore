@@ -6,3 +6,5 @@ pip-selfcheck.json
 MANIFEST
 .DS_Store
 dist/
+build/
+.idea/

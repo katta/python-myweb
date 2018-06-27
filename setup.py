@@ -12,7 +12,7 @@ setup(
     #author_email="name@addr.ess",
 
     # Packages
-    packages=["app"],
+    packages=["myweb"],
 
     # Scripts
     scripts=["scripts/run"],
