@@ -149,7 +149,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'myweb = web.main:main',
+            'myweb = myweb.main:main',
         ],
     }
 )

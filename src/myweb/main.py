@@ -1,4 +1,4 @@
-from controller import app
+from web import app
 
 
 def main():

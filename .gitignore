@@ -10,6 +10,10 @@ build/
 .idea/
 gradle/
 .gradle/
+gradlew.bat
 *.pyc
 pinned.txt
-myweb/myweb.egg-info/
+*.egg-info/
+activate
+*.iml
+*.ipr
