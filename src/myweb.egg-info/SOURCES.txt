@@ -1,0 +1,15 @@
+.gitignore
+build.gradle
+gradlew
+pinned.txt
+setup.py
+myweb/__init__.py
+myweb/main.py
+myweb/myweb.egg-info/PKG-INFO
+myweb/myweb.egg-info/SOURCES.txt
+myweb/myweb.egg-info/dependency_links.txt
+myweb/myweb.egg-info/entry_points.txt
+myweb/myweb.egg-info/requires.txt
+myweb/myweb.egg-info/top_level.txt
+myweb/web/__init__.py
+myweb/web/controller.py

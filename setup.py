@@ -141,15 +141,15 @@ setup(
     # name='myweb',
     # version='0.1',
     distclass=GradleDistribution,
-    package_dir={'': 'myweb'},
-    packages=find_packages('myweb'),
+    package_dir={'': 'src'},
+    packages=find_packages('src'),
     data_files=[('', ['pinned.txt'])],
     include_package_data=True,
 
 
     entry_points={
         'console_scripts': [
-            'myweb = myweb.main:main',
+            'myweb = web.main:main',
         ],
     }
 )
