@@ -10,3 +10,6 @@ build/
 .idea/
 gradle/
 .gradle/
+*.pyc
+pinned.txt
+myweb/myweb.egg-info/

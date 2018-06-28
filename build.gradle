@@ -7,6 +7,9 @@ buildscript {
     }
 }
 
+//name: 'myweb'
+version = "1.0"
+
 apply plugin: "com.linkedin.python-sdist"
 //apply plugin: com.linkedin.gradle.python.plugin.WheelFirstPlugin
 

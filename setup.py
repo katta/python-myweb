@@ -90,8 +90,8 @@ class GradleDistribution(Distribution, object):
     excluded_platform_packages = {}
 
     def __init__(self, attrs):
-        attrs['name'] = os.getenv('PYGRADLE_PROJECT_NAME')
-        attrs['version'] = os.getenv('PYGRADLE_PROJECT_VERSION')
+        attrs['name'] = 'myweb'
+        attrs['version'] = '1.0'
         attrs['install_requires'] = list(self.load_pinned_deps())
         super(GradleDistribution, self).__init__(attrs)
 
@@ -138,14 +138,18 @@ class GradleDistribution(Distribution, object):
             raise StopIteration
 
 setup(
-   distclass=GradleDistribution,
-   package_dir={'': 'myweb'},
-   packages=find_packages('myweb'),
-   include_package_data=True,
+    # name='myweb',
+    # version='0.1',
+    distclass=GradleDistribution,
+    package_dir={'': 'myweb'},
+    packages=find_packages('myweb'),
+    data_files=[('', ['pinned.txt'])],
+    include_package_data=True,
 
-   entry_points={
-       'console_scripts': [
-           'myweb = myweb:app',
-       ],
-   }
+
+    entry_points={
+        'console_scripts': [
+            'myweb = myweb.main:main',
+        ],
+    }
 )
